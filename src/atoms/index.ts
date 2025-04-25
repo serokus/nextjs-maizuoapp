@@ -10,10 +10,10 @@ export const tabItemsAtom = atom([
 
 export const movieTypeAtom = atom(1)
 
-export const citiesAtom = atomWithLazy<City[]>(() => cities)
-
 export const userLocationAtom = atom<Location>()
 
-export const cityAtom = atomWithStorage<Partial<City>>('city', {})
-
 export const isConfirmCityAtom = atom(false)
+
+export const citiesAtom = atomWithLazy<City[]>(() => cities)
+
+export const cityAtom = atomWithStorage<Partial<City>>('city', {})
